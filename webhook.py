@@ -39,7 +39,7 @@ def makeResponse(req):
     r = requests.get('http://api.openweathermap.org/data/2.5/forecast?q='+city+'&appid=402a99fb3bd6fc79f1e1478b763092f5')
     json_object = r.json()
     weather=json_object['list']
-    for i in range(0,len(weather)):
+    for i in range(0,30):
         condition = weather[i]['weather'][0]['description']
         break
     
