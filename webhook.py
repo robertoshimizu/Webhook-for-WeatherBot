@@ -46,7 +46,7 @@ def makeResponse(req):
     # Dialogflow will expect following fields from response
     # speech, displayText, source
     
-    speech = "The forecast for"+city+ "for" +date+" is "+condition
+    speech = "The forecast for "+ city +" on " +date+" is "+condition
     
     return {
     "speech": speech,
