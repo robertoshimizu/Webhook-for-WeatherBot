@@ -49,8 +49,8 @@ def makeResponse(req):
     speech = "The forecast for "+ city +" on " +date+" is "+condition
     
     return {
-    "speech": speech,
-    "displayText":speech,
+    "fulfillment_text": speech,
+    "fulfillment_messages":speech,
     "source": "apiai-weather-webhook"        
     }
     
