@@ -50,7 +50,7 @@ def makeResponse(req):
     
     return {
     "fulfillment_text": speech,
-    "fulfillment_messages":speech,
+    #"fulfillment_messages":speech,
     "source": "apiai-weather-webhook"        
     }
     
